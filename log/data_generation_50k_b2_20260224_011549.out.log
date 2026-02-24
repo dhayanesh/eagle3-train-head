@@ -1,0 +1,19 @@
+INFO 02-24 01:50:03 [model.py:541] Resolved architecture: GptOssForCausalLM
+INFO 02-24 01:50:05 [model.py:1561] Using max model len 1024
+INFO 02-24 01:50:05 [scheduler.py:226] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 02-24 01:50:05 [config.py:314] Overriding max cuda graph capture size to 1024 for performance.
+INFO 02-24 01:50:05 [vllm.py:624] Asynchronous scheduling is enabled.
+WARNING 02-24 01:50:05 [vllm.py:662] Enforce eager set, overriding optimization level to -O0
+INFO 02-24 01:50:05 [vllm.py:762] Cudagraph is disabled under eager mode
+WARNING 02-24 01:50:06 [multiproc_executor.py:910] Reducing Torch parallelism from 104 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 02-24 01:50:12 [worker_base.py:283] Injected <class 'speculators.data_generation.custom_worker.HiddenStatesWorkerExtension'> into <class 'vllm.v1.worker.gpu_worker.Worker'> for extended collective_rpc calls ['_get_captured_states', '_reset_capture', '_set_request_metadata', '_setup_hidden_states_capture', '_store_captured_states']
+INFO 02-24 01:50:13 [parallel_state.py:1212] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://127.0.0.1:60845 backend=nccl
+INFO 02-24 01:50:13 [parallel_state.py:1423] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0
+[0;36m(Worker pid=15174)[0;0m INFO 02-24 01:50:13 [gpu_model_runner.py:4033] Starting to load model openai/gpt-oss-20b...
+[0;36m(Worker pid=15174)[0;0m INFO 02-24 01:50:14 [cuda.py:364] Using FLASH_ATTN attention backend out of potential backends: ('FLASH_ATTN', 'TRITON_ATTN')
+[0;36m(Worker pid=15174)[0;0m INFO 02-24 01:50:14 [mxfp4.py:164] Using Triton backend
+[0;36m(Worker pid=15174)[0;0m INFO 02-24 01:50:17 [default_loader.py:291] Loading weights took 2.16 seconds
+[0;36m(Worker pid=15174)[0;0m INFO 02-24 01:50:18 [gpu_model_runner.py:4130] Model loading took 13.47 GiB memory and 3.943259 seconds
+WARNING 02-24 01:50:18 [kv_cache_utils.py:1163] Hybrid KV cache manager is disabled for this hybrid model, This means we do not enable any optimizations for saving KV cache memory (e.g., dropping the KV cache outside the sliding window). The compute of layers like sliding window is still saved.
+[0;36m(Worker pid=15174)[0;0m INFO 02-24 02:56:42 [multiproc_executor.py:730] Parent process exited, terminating worker
+[0;36m(Worker pid=15174)[0;0m INFO 02-24 02:56:42 [multiproc_executor.py:774] WorkerProc shutting down.
