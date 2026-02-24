@@ -1,5 +1,5 @@
 # GPT-OSS-20B Eagle3 Summarization Task Training
-
+Paper: https://arxiv.org/html/2503.01840v1
 This project documents an end-to-end Eagle3 training run for summarization with:
 
 - Verifier model: `openai/gpt-oss-20b`
