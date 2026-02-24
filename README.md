@@ -1,4 +1,4 @@
-# GPT-OSS-20B Eagle3 Summarization Training
+# GPT-OSS-20B Eagle3 Summarization Task Training
 
 This project documents an end-to-end Eagle3 training run for summarization with:
 
