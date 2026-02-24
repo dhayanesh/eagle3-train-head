@@ -25,9 +25,10 @@
 
 
 data/
-output/
+output/**
 
 # Keep only log directories inside output
+!output/
 !output/*/
 output/*/**
 !output/*/log*/
