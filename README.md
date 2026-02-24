@@ -29,15 +29,6 @@ Current local counts:
 - `data/raw_summaries.jsonl`: `204045` rows
 - `data/summarization_train.jsonl`: `204017` rows
 
-## Setup
-
-Create a Python environment, then install Speculators with data-generation extras:
-
-```bash
-cd speculators
-pip install -e ".[datagen]"
-```
-
 ## End-to-End Commands Used
 
 Run dataset download and preprocessing from repo root:
