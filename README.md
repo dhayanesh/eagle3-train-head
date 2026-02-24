@@ -87,3 +87,17 @@ PYTHONPATH=./src torchrun --standalone --nproc_per_node=2 scripts/train.py \
 1. `data_generation_offline.py`: Generates training hidden states with vLLM (and preprocesses data if needed).
 2. `build_vocab_mapping.py`: Creates draft/target vocabulary mappings (`d2t`, `t2d`) from token frequencies.
 3. `train.py`: Trains Eagle3 on generated hidden-state data and vocab mappings.
+
+
+## Speculative Decoding Metrics - Till 6 epoch
+
+```text
+num_drafts: 51
+num_draft_tokens: 255
+num_accepted_tokens: 12
+overall draft-token acceptance rate: 0.0471
+mean acceptance length: 1.2353
+acceptance rate at speculative position 0: 0.2353
+acceptance rate at speculative position 1: 0.0000
+acceptance rate at speculative position 2: 0.0000
+acceptance rate at speculative position 3: 0.0000
