@@ -1,0 +1,29 @@
+# Ignore cache/noise
+**/__pycache__/
+**/.ipynb_checkpoints/
+*.pyc
+
+# Ignore large model/data artifacts globally
+*.pt
+*.safetensors
+*.ckpt
+*.npy
+*.npz
+*.bin
+*.onnx
+*.h5
+*.hdf5
+*.parquet
+*.msgpack
+*.tar
+*.tar.gz
+*.tgz
+*.xz
+*.zst
+*.7z
+*.zip
+
+
+data/
+log/
+output/
