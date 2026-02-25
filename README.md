@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="screenhots/logo.png" alt="Logo" width="56" style="vertical-align: middle; margin-right: 10px;" />
+  <img src="screenshots/logo.png" alt="Logo" width="56" style="vertical-align: middle; margin-right: 10px;" />
   <span style="font-size: 28px; font-weight: bold; vertical-align: middle;">
     GPT-OSS-20B Eagle3 Summarization Task Training
   </span>
